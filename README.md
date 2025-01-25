@@ -38,3 +38,11 @@ Skriv en sammanhängande text där du nyanserat svarar och reflekterar över fö
 ⚠️ Tänk på:
 Du ska skriva minst 300 ord men hur mycket du skriver är upp till dig.
 Du behöver inte vara orolig för språket, du läser inte en kurs i kommunikation. Bara vi förstår vad du skriver så kan vi bedöma inlämningen!
+
+# Din inlämning
+- Denna uppgift ska lämnas in som ett Github repository och även publiceras på Github pages
+- För koden: lämna in ett textdokument med två länkar:
+- En länk till ditt repository
+- En länk till din sida på Github pages
+- För VG-delen (om du väljer att göra den):
+- Lämna in ett PDF-dokument med dina reflektioner
