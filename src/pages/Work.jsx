@@ -1,24 +1,37 @@
 import React, { useState, useEffect } from 'react';
 
 const Work = () => {
+	const [data, setData] = useState([]);
+	const [loading, setLoading] = useState(true);
+
+	useEffect(() => {
+		fetch('/data.json')
+			.then((response) => response.json())
+			.then((jsonData) => {
+				setData(jsonData);
+				setLoading(false);
+			})
+			.catch((error) => {
+				console.error('Error fetching data:', error);
+				setLoading(false);
+			});
+	}, []
+	);
+
+	if (loading) return <main><p>Loading data</p></main>;
+
 	return (
 		<main>
 			<h1>Work Experience</h1>
 			<div>
-				<section>
-					<p class="sub-category">Securitas</p>
-					<p>April 2022-Present - Security Guard</p>
-					<p>Full-time contract as a security guard. On behalf of Securitas, I patrol several buildings at one
-						of their clients' sites in Södertälje.<br/>This also includes report writing and getting called
-						out on fire and emergency alarms, as well as working as a receptionist and escort when needed.
-					</p>
-					<p>Södertälje, Sweden</p>
-				</section>
-				<section>
-					<p class="sub-category">Mind Proxy AB</p>
-					<p>June 2023-Sept 2023 - Supervisor and Administrator</p>
-					<p>Norberg, Sweden (Remote)</p>
-				</section>
+				{data.work.map((work) => (
+					<section key={work.id}>
+						<p class="sub-category">{work.employer}</p>
+						<p>{work.period} - {work.title}</p>
+						<p>{work.description}</p>
+						<p>{work.location}</p>
+					</section>
+				))}
 			</div>
 		</main>
 	);
