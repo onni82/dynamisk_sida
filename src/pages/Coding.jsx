@@ -1,4 +1,7 @@
 import React from "react";
+import dotnetIcon from "../images/dotnet.png";
+import cppIcon from "../images/cpp.png";
+import reactIcon from "../images/react.png";
 import { useEffect } from "react";
 
 const Coding = () => {
@@ -12,7 +15,7 @@ const Coding = () => {
 				<section>
 					<div class="no-print">
 						<p class="sub-category">Adventure Game</p>
-						<img class="skill-logo" alt="Dotnet icon" src="./images/dotnet.png" />
+						<img class="skill-logo" alt="Dotnet icon" src={dotnetIcon} />
 						<p>A console based game written in C#.
 							<a href="https://github.com/onni82/AdventureGame">GitHub repository link</a>.
 						</p>
@@ -40,7 +43,7 @@ const Coding = () => {
 				<section>
 					<div class="no-print">
 						<p class="sub-category">Projektuppgift</p>
-						<img class="skill-logo" alt="C++ icon" src="./images/cpp.png" />
+						<img class="skill-logo" alt="C++ icon" src={cppIcon} />
 						<p>A console based game written in C/C++. 
 							<a href="https://github.com/onni82/projektuppgift">GitHub repository link</a>.
 						</p>
@@ -66,7 +69,7 @@ const Coding = () => {
 				<section>
 					<div class="no-print">
 						<p class="sub-category">onnibucht.netlify.app</p>
-						<img class="skill-logo" alt="React icon" src="./images/react.png" />
+						<img class="skill-logo" alt="React icon" src={reactIcon} />
 						<p>A website built using Gatsby, which is a React library.
 							<a href="https://github.com/onni82/onnibucht">GitHub repository link</a>.
 						</p>
