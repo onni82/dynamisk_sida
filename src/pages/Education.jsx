@@ -7,7 +7,7 @@ const Education = () => {
 			<div>
 				<section>
 					<p class="sub-category">Iris Hadar</p>
-					<p>Apr 2024-Present - Municipal Adult Education - Web development 1</p>
+					<p>Apr 2024-June 2024 - Municipal Adult Education - Web development 1</p>
 					<p>Stockholm/Södertälje, Sweden (online course)</p>
 				</section>
 				<section>

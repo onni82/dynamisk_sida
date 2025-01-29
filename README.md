@@ -17,7 +17,7 @@ Du får gärna ha både dessa projekt och de tidigare som ligger direkt i HTML-k
 - [ ] När hämtningen av projekten sker ska det finnas information om att projekten håller på att ladda in så att besökaren inte undrar varför sidan först är tom.
 
 **Navigation**
-- [ ] Navigationen på sidan ska baseras på React Router så att hela sidan i praktiken kör React.
+- [x] Navigationen på sidan ska baseras på React Router så att hela sidan i praktiken kör React.
 - [ ] Du ska säkerställa att användaren inte får ett 404-sida om de skulle ladda-om något av sidorna i din app.
 
 **Deploy**
