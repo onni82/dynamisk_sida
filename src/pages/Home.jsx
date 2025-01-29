@@ -7,7 +7,7 @@ const Home = () => {
 			<h1>This is Onni Bucht</h1>
 			<div>
 				<section>
-					<img class="fit-image" src="{squareprofile}" alt="Profile picture of Onni Bucht" />
+					<img class="fit-image" src={squareprofile} alt="Profile picture of Onni Bucht" />
 				</section>
 				<section>
 					<p>Works as a <span class="bold-text">security guard</span>.</p>

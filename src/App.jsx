@@ -6,8 +6,8 @@ import Contact from "./pages/Contact.jsx";
 import Education from "./pages/Education.jsx";
 import Skills from "./pages/Skills.jsx";
 import Work from "./pages/Work.jsx";
-import Header from './components/Header.jsx'
-import Footer from './components/Footer.jsx'
+import Header from './components/Header.jsx';
+import Footer from './components/Footer.jsx';
 
 function App() {
 	return (
@@ -28,4 +28,4 @@ function App() {
 	)
 }
 
-export default App
+export default App;
