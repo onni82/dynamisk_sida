@@ -9,7 +9,7 @@ import Work from "./pages/Work.jsx";
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 
-function App() {
+const App = () => {
 	return (
 		<>
 			<Header />
@@ -25,7 +25,7 @@ function App() {
 			</Router>
 			<Footer />
 		</>
-	)
-}
+	);
+};
 
 export default App;
