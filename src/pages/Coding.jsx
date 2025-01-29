@@ -13,20 +13,20 @@ const Coding = () => {
 			<h1>Coding</h1>
 			<div>
 				<section>
-					<div class="no-print">
-						<p class="sub-category">Adventure Game</p>
-						<img class="skill-logo" alt="Dotnet icon" src={dotnetIcon} />
+					<div className="no-print">
+						<p className="sub-category">Adventure Game</p>
+						<img className="skill-logo" alt="Dotnet icon" src={dotnetIcon} />
 						<p>A console based game written in C#.
 							<a href="https://github.com/onni82/AdventureGame">GitHub repository link</a>.
 						</p>
-						<input type="checkbox" id="toggle-AdventureGame" class="toggle-info" hidden />
+						<input type="checkbox" id="toggle-AdventureGame" className="toggle-info" hidden />
 						<p>
-							<label for="toggle-AdventureGame" class="toggle-link">Click here to read more</label>
+							<label for="toggle-AdventureGame" className="toggle-link">Click here to read more</label>
 						</p>
 					</div>
-					<div class="modal print">
-						<div class="modal-content">
-							<label for="toggle-AdventureGame" class="close">&times;</label>
+					<div className="modal print">
+						<div className="modal-content">
+							<label for="toggle-AdventureGame" className="close">&times;</label>
 							<h2>Adventure Game</h2>
 							<p>A console based game written in C#.
 								<a href="https://github.com/onni82/AdventureGame">GitHub repository link</a>.
@@ -41,20 +41,20 @@ const Coding = () => {
 					</div>
 				</section>
 				<section>
-					<div class="no-print">
-						<p class="sub-category">Projektuppgift</p>
-						<img class="skill-logo" alt="C++ icon" src={cppIcon} />
+					<div className="no-print">
+						<p className="sub-category">Projektuppgift</p>
+						<img className="skill-logo" alt="C++ icon" src={cppIcon} />
 						<p>A console based game written in C/C++. 
 							<a href="https://github.com/onni82/projektuppgift">GitHub repository link</a>.
 						</p>
-						<input type="checkbox" id="toggle-projektuppgift" class="toggle-info" hidden />
+						<input type="checkbox" id="toggle-projektuppgift" className="toggle-info" hidden />
 						<p>
-							<label for="toggle-projektuppgift" class="toggle-link">Click here to read more</label>
+							<label for="toggle-projektuppgift" className="toggle-link">Click here to read more</label>
 						</p>
 					</div>
-					<div class="modal print">
-						<div class="modal-content">
-							<label for="toggle-projektuppgift" class="close">&times;</label>
+					<div className="modal print">
+						<div className="modal-content">
+							<label for="toggle-projektuppgift" className="close">&times;</label>
 							<h2>Adventure Game</h2>
 							<p>A console based game written in C/C++. <a
 									href="https://github.com/onni82/projektuppgift">GitHub repository link</a>.</p>
@@ -67,20 +67,20 @@ const Coding = () => {
 					</div>
 				</section>
 				<section>
-					<div class="no-print">
-						<p class="sub-category">onnibucht.netlify.app</p>
-						<img class="skill-logo" alt="React icon" src={reactIcon} />
+					<div className="no-print">
+						<p className="sub-category">onnibucht.netlify.app</p>
+						<img className="skill-logo" alt="React icon" src={reactIcon} />
 						<p>A website built using Gatsby, which is a React library.
 							<a href="https://github.com/onni82/onnibucht">GitHub repository link</a>.
 						</p>
-						<input type="checkbox" id="toggle-onnibucht" class="toggle-info" hidden />
+						<input type="checkbox" id="toggle-onnibucht" className="toggle-info" hidden />
 						<p>
-							<label for="toggle-onnibucht" class="toggle-link">Click here to read more</label>
+							<label for="toggle-onnibucht" className="toggle-link">Click here to read more</label>
 						</p>
 					</div>
-					<div class="modal print">
-						<div class="modal-content">
-							<label for="toggle-onnibucht" class="close">&times;</label>
+					<div className="modal print">
+						<div className="modal-content">
+							<label for="toggle-onnibucht" className="close">&times;</label>
 							<h2>onnibucht.netlify.app</h2>
 							<p>A website built using Gatsby, which is a React library and hosted on
 								<a href="https://github.com/onni82/onnibucht">GitHub</a>. Link to website: 
