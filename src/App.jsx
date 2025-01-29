@@ -12,8 +12,8 @@ import Footer from './components/Footer.jsx';
 const App = () => {
 	return (
 		<>
-			<Header />
 			<Router>
+				<Header />
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/coding" element={<Coding />} />
@@ -22,8 +22,8 @@ const App = () => {
 					<Route path="/skills" element={<Skills />} />
 					<Route path="/work" element={<Work />} />
 				</Routes>
+				<Footer />
 			</Router>
-			<Footer />
 		</>
 	);
 };
