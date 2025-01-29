@@ -1,47 +1,45 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 
 const Education = () => {
+	const [data, setData] = useState([]);
+	const [loading, setLoading] = useState(true);
+
+	useEffect(() => {
+		fetch('/data.json')
+			.then((response) => response.json())
+			.then((jsonData) => {
+				setData(jsonData);
+				setLoading(false);
+			})
+			.catch((error) => {
+				console.error('Error fetching data:', error);
+				setLoading(false);
+			});
+	}, []
+	);
+
+	if (loading) return <main><p>Loading data</p></main>;
+
 	return (
 		<main>
 			<h1>Education</h1>
 			<div>
-				<section>
-					<p class="sub-category">Iris Hadar</p>
-					<p>Apr 2024-June 2024 - Municipal Adult Education - Web development 1</p>
-					<p>Stockholm/Södertälje, Sweden (online course)</p>
-				</section>
-				<section>
-					<p class="sub-category">Iris Hadar</p>
-					<p>Nov 2023-Jan 2024 - Municipal Adult Education - Mathematics 2a</p>
-					<p>Stockholm/Södertälje, Sweden (online course)</p>
-				</section>
-				<section>
-					<p class="sub-category">Iris Hadar</p>
-					<p>July 2023-Sep 2023 - Municipal Adult Education - Programming 1 (C++)</p>
-					<p>Stockholm/Södertälje, Sweden (online course)</p>
-				</section>
-				<section>
-					<p class="sub-category">Be Licensed</p>
-					<p>Feb 2022-Mar 2022 - Vocational Training - Video Production</p>
-					<p>Stockholm, Sweden (online course)</p>
-				</section>
-				<section>
-					<p class="sub-category">Be Licensed</p>
-					<p>Dec 2021-Jan 2022 - Vocational Training - Sound Production</p>
-					<p>Stockholm, Sweden (online course)</p>
-				</section>
-				<section>
-					<p class="sub-category">Dalarna University</p>
-					<p>2018-2021 - Bachelor of Science - Sound and Music Production</p>
-					<p>Falun, Sweden</p>
-				</section>
+				{data.education.map((edu) => (
+					<section key={edu.id}>
+						<p class="sub-category">{edu.school}</p>
+						<p>{edu.period} - {edu.schoolType} - {edu.course}</p>
+						<p>{edu.location}</p>
+					</section>
+				))}
 			</div>
 			<h1>Certifications</h1>
 			<div>
-				<section>
-					<p class="sub-category">Avid Pro Tools</p>
-					<p>Certified User - version 2020 and version 12.8</p>
-				</section>
+				{data.certifications.map((cert) => (
+					<section key={cert.id}>
+						<p class="sub-category">{cert.software}</p>
+						<p>{cert.description}</p>
+					</section>
+				))}
 			</div>
 		</main>
 	);
