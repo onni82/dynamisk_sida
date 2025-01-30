@@ -35,8 +35,8 @@ const Coding = () => {
 				{repos.map((repo) => (
 					<section key={repo.id}>
 						<p className="sub-category">{repo.name}</p>
-						<p>Written in {repo.language}.</p>
-						<p>{repo.description || "No description available"} <a href={repo.html_url} target="_blank" rel="noopener noreferrer">GitHub repository link</a>.</p>
+						<p>Written in {repo.language || "unknown language"}.</p>
+						<p>{repo.description || "No description available"}. <a href={repo.html_url} target="_blank" rel="noopener noreferrer">GitHub repository link</a>.</p>
 					</section>
 				))}
 			</div>
