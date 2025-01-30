@@ -7,9 +7,9 @@ Denna uppgift bygger vidare på labb 1 (CV-portal) och i denna ska du utveckla d
 Du ska refaktorera/omstrukturera din CV-sida från labb 1 till en react-app och nu se till så att den även följer nedanstående kravställningar:
 
 **CV i en fil**
-- [ ] Dina utbildningar och tidigare arbetsplatser ska inte längre ligga i HTML-koden
-- [ ] Vilka utbildningar du läst och vilka tidigare arbeten du haft ska ligga i en separat fil i JSON-format
-- [ ] Denna JSON-fil ska kunna läsas och generera ditt CV
+- [x] Dina utbildningar och tidigare arbetsplatser ska inte längre ligga i HTML-koden
+- [x] Vilka utbildningar du läst och vilka tidigare arbeten du haft ska ligga i en separat fil i JSON-format
+- [x] Denna JSON-fil ska kunna läsas och generera ditt CV
 
 **Portfolio - React**
 - [ ] Din portfolio ska utökas så att den hämtar in publika projekt som finns på din egna Github sida. Den ska visa dessa projekt i din portfolio med namn och beskrivning.
