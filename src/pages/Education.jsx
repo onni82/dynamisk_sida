@@ -15,8 +15,7 @@ const Education = () => {
 				console.error('Error fetching data:', error);
 				setLoading(false);
 			});
-	}, []
-	);
+	}, []);
 
 	if (loading) return <main><p>Loading data</p></main>;
 
