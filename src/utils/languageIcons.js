@@ -1,5 +1,6 @@
 import { FaJs, FaPython, FaJava, FaReact, FaNodeJs, FaPhp, FaRust, FaSwift, FaCuttlefish, FaHtml5, FaCss3 } from "react-icons/fa";
-import { SiCsharp, SiCplusplus, SiGo, SiKotlin, SiRuby, SiTypescript } from "react-icons/si";
+import { SiCplusplus, SiGo, SiKotlin, SiRuby, SiTypescript } from "react-icons/si";
+import { TbBrandCSharp } from "react-icons/tb";
 
 const languageIcons = {
 	JavaScript: <FaJs className="lang-icon js" />,
@@ -11,7 +12,7 @@ const languageIcons = {
 	Rust: <FaRust className="lang-icon rust" />,
 	Swift: <FaSwift className="lang-icon swift" />,
 	C: <FaCuttlefish className="lang-icon c" />,
-	"C#": <SiCsharp className="lang-icon csharp" />,
+	"C#": <TbBrandCSharp className="lang-icon csharp" />,
 	"C++": <SiCplusplus className="lang-icon cpp" />,
 	Go: <SiGo className="lang-icon go" />,
 	Kotlin: <SiKotlin className="lang-icon kotlin" />,
