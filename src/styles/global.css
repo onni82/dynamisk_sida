@@ -163,6 +163,11 @@ section>img.fit-image {
 	height: 50px;
 }
 .js { color: yellow; }
+.js path {
+	stroke: #000000;
+	stroke-width: 2px;
+	stroke-linejoin: round;
+}
 .python { color: blue; }
 .java { color: red; }
 .react { color: lightblue; }
