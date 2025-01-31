@@ -12,9 +12,9 @@ Du ska refaktorera/omstrukturera din CV-sida från labb 1 till en react-app och 
 - [x] Denna JSON-fil ska kunna läsas och generera ditt CV
 
 **Portfolio - React**
-- [ ] Din portfolio ska utökas så att den hämtar in publika projekt som finns på din egna Github sida. Den ska visa dessa projekt i din portfolio med namn och beskrivning.
+- [x] Din portfolio ska utökas så att den hämtar in publika projekt som finns på din egna Github sida. Den ska visa dessa projekt i din portfolio med namn och beskrivning.
 Du får gärna ha både dessa projekt och de tidigare som ligger direkt i HTML-koden om du vill det. Eller så ersätter du de tidigare projekten så att det nu bara blir dina Github-projekt.
-- [ ] När hämtningen av projekten sker ska det finnas information om att projekten håller på att ladda in så att besökaren inte undrar varför sidan först är tom.
+- [x] När hämtningen av projekten sker ska det finnas information om att projekten håller på att ladda in så att besökaren inte undrar varför sidan först är tom.
 
 **Navigation**
 - [x] Navigationen på sidan ska baseras på React Router så att hela sidan i praktiken kör React.
