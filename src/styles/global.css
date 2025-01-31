@@ -163,6 +163,23 @@ section>img.fit-image {
 	float: right;
 	width: 50px;
 }
+.js { color: yellow; }
+.python { color: blue; }
+.java { color: red; }
+.react { color: lightblue; }
+.node { color: green; }
+.php { color: purple; }
+.rust { color: brown; }
+.swift { color: orange; }
+.c { color: blue; }
+.csharp { color: purple; }
+.cpp { color: blue; }
+.go { color: cyan; }
+.kotlin { color: purple; }
+.ruby { color: red; }
+.ts { color: blue; }
+.html { color: orange; }
+.css { color: blue; }
 
 /* text styling */
 h1,
