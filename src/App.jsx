@@ -8,10 +8,12 @@ import Skills from "./pages/Skills.jsx";
 import Work from "./pages/Work.jsx";
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
+import EasterEggModal from "./components/EasterEggModal.jsx";
 
 const App = () => {
 	return (
 		<>
+			<EasterEggModal />
 			<Router>
 				<Header />
 				<Routes>
