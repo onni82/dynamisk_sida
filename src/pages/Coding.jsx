@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaJs } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import languageIcons from "../utils/languageIcons";
 
 const Coding = () => {
@@ -37,7 +37,7 @@ const Coding = () => {
 				{repos.map((repo) => (
 					<section key={repo.id}>
 						<p className="sub-category">{repo.name}</p>
-						{(languageIcons[repo.language] || (() => <FaJs className="lang-icon default" />))()}
+						{(languageIcons[repo.language] || (() => <FaGithub className="lang-icon" />))()}
 						<p>Written in {repo.language || "unknown language"}.</p>
 						<p>{repo.description || "No description available"}.<br/><a href={repo.html_url} target="_blank" rel="noopener noreferrer">GitHub repository link</a>.</p>
 					</section>
