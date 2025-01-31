@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaJs, FaPython, FaJava, FaReact, FaNodeJs, FaPhp, FaRust, FaSwift, FaCuttlefish, FaHtml5, FaCss3 } from "react-icons/fa";
-import { SiCplusplus, SiGo, SiKotlin, SiRuby, SiTypescript } from "react-icons/si";
-import { TbBrandCSharp } from "react-icons/tb";
+import { FaJs } from "react-icons/fa";
 import languageIcons from "../utils/languageIcons";
 
 const Coding = () => {
