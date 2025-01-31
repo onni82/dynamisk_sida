@@ -143,12 +143,9 @@ main > div > section {
 }
 @media screen and (max-width: 537px) {
 	main > div > section {
-		flex: 1 1 100%; /* Stack sections on extremely small screens */
-		max-width: 100%; /* Prevent side-by-side display */
+		flex: 1 1 100%;
+		max-width: 100%;
 	}
-}
-section p {
-	text-shadow: 0px 0px 8px white;
 }
 section span.bold-text {
 	font-weight: bold;
@@ -157,7 +154,6 @@ section>img.fit-image {
 	width: 100%;
 	height: auto;
 	max-width: 500px;
-	/* max-height: 50%; */
 }
 
 /* language icons styling */
