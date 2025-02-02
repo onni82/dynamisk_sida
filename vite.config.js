@@ -14,6 +14,13 @@ export default defineConfig(({ command, mode, isSsrBuild, isPreview }) => {
 			//build specific config
 			plugins: [react()],
 			base: '/dynamisk_sida/',
+			build: {
+				rollupOptions: {
+					input: {
+						main: 'index.html',
+					},
+				},
+			},
 		}
 	}
 })
