@@ -6,8 +6,23 @@
 	<meta http-equiv="refresh" content="0; url=/dynamisk_sida/">
 	<script>
 		(function () {
-			var redirectTo = window.location.pathname.replace('/dynamisk_sida', '');
-			window.location.replace('/dynamisk_sida/' + (redirectTo || ''));
+			var basePath = "/dynamisk_sida";
+			var currentPath = window.location.pathname;
+
+			// Ensure we only redirect when necessary
+			if (!currentPath.startsWith(basePath)) {
+				window.location.replace(basePath + "/");
+				return;
+			}
+
+			// Extract the correct subpath (avoiding duplicate slashes)
+			var redirectTo = currentPath.replace(basePath, "").replace(/^\/+/, "");  // Remove leading slash if exists
+			var newUrl = basePath + (redirectTo ? "/" + redirectTo : "");
+
+			// Redirect only if the URL isn't already correct
+			if (window.location.pathname !== newUrl) {
+				window.location.replace(newUrl);
+			}
 		})();
 	</script>
 </head>
