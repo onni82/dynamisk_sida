@@ -14,8 +14,8 @@ const Header = () => {
 					<li>
 						<a
 							className="clickable index"
-							href="/"
-							aria-current={location.pathname === "/" ? "page" : undefined}
+							href="/dynamisk_sida/"
+							aria-current={location.pathname === "/dynamisk_sida/" ? "page" : undefined}
 						>
 							Home
 						</a>
@@ -23,8 +23,8 @@ const Header = () => {
 					<li>
 						<a
 							className="clickable work"
-							href="/work"
-							aria-current={location.pathname === "/work" ? "page" : undefined}
+							href="/dynamisk_sida/work"
+							aria-current={location.pathname === "/dynamisk_sida/work" ? "page" : undefined}
 						>
 							Work Experience
 						</a>
@@ -32,8 +32,8 @@ const Header = () => {
 					<li>
 						<a
 							className="clickable coding"
-							href="/coding"
-							aria-current={location.pathname === "/coding" ? "page" : undefined}
+							href="/dynamisk_sida/coding"
+							aria-current={location.pathname === "/dynamisk_sida/coding" ? "page" : undefined}
 						>
 							Coding
 						</a>
@@ -41,8 +41,8 @@ const Header = () => {
 					<li>
 						<a
 							className="clickable education"
-							href="/education"
-							aria-current={location.pathname === "/education" ? "page" : undefined}
+							href="/dynamisk_sida/education"
+							aria-current={location.pathname === "/dynamisk_sida/education" ? "page" : undefined}
 						>
 							Education
 						</a>
@@ -50,8 +50,8 @@ const Header = () => {
 					<li>
 						<a
 							className="clickable skills"
-							href="/skills"
-							aria-current={location.pathname === "/skills" ? "page" : undefined}
+							href="/dynamisk_sida/skills"
+							aria-current={location.pathname === "/dynamisk_sida/skills" ? "page" : undefined}
 						>
 							Skills
 						</a>

@@ -23,8 +23,8 @@ const Footer = () => {
 			</p>
 			<a
 			className="clickable contact"
-			href="/contact"
-			aria-current={location.pathname === "/contact" ? "page" : undefined}
+			href="/dynamisk_sida/contact"
+			aria-current={location.pathname === "/dynamisk_sida/contact" ? "page" : undefined}
 			>Contact</a>
 		</footer>
 	);
