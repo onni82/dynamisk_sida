@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-	base: "/dynamisk_sida",
-	plugins: [react()]
+	plugins: [react()],
+	base: "/dynamisk_sida/"
 })
