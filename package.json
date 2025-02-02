@@ -2,6 +2,7 @@
 	"name": "dynamisk_sida",
 	"private": true,
 	"version": "0.0.0",
+	"homepage": "https://onni82.github.io/dynamisk_sida",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
