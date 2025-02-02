@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import { ViteSSG } from 'vite-ssg';
+import { ViteSSG } from 'vite-ssg-react';
 
 // https://vite.dev/config/
 export default defineConfig(({ command, mode, isSsrBuild, isPreview }) => {
