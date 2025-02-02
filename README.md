@@ -21,7 +21,7 @@ Du får gärna ha både dessa projekt och de tidigare som ligger direkt i HTML-k
 - [x] Du ska säkerställa att användaren inte får ett 404-sida om de skulle ladda-om något av sidorna i din app.
 
 **Deploy**
-- [ ] Publicera din sida på Github Pages så att den blir åtkomlig via en länk.
+- [x] Publicera din sida på Github Pages så att den blir åtkomlig via en länk.
 
 **VG-nivå (Frivillig)**
 Om du satsar på VG på denna uppgift och hela kursen ska du göra denna del av uppgiften. Är du nöjd med ett G för uppgiften/kursen kan du strunta i denna VG-fråga helt och hållet.
