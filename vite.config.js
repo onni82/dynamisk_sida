@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import resolve from 'path';
 
 // https://vite.dev/config/
 export default defineConfig(({ command, mode, isSsrBuild, isPreview }) => {
@@ -14,6 +15,14 @@ export default defineConfig(({ command, mode, isSsrBuild, isPreview }) => {
 			//build specific config
 			plugins: [react()],
 			base: '/dynamisk_sida/',
+			build: {
+				rollupOptions: {
+					input: {
+						main: resolve(__dirname, "index.html"),
+						404:  resolve(__dirname, "public/404.html"),
+					}
+				}
+			}
 		}
 	}
 });
