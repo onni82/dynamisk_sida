@@ -15,16 +15,16 @@ const App = () => {
 	return (
 		<>
 			<EasterEggModal />
-			<Router>
+			<Router basename="/dynamisk_sida">
 				<Header />
 				<Routes>
-					<Route path="/dynamisk_sida/" element={<Home />} />
-					<Route path="/dynamisk_sida/coding" element={<Coding />} />
-					<Route path="/dynamisk_sida/contact" element={<Contact />} />
-					<Route path="/dynamisk_sida/education" element={<Education />} />
-					<Route path="/dynamisk_sida/skills" element={<Skills />} />
-					<Route path="/dynamisk_sida/work" element={<Work />} />
-					<Route path="/dynamisk_sida/*" element={<PageNotFound />} />
+					<Route path="/" element={<Home />} />
+					<Route path="/coding" element={<Coding />} />
+					<Route path="/contact" element={<Contact />} />
+					<Route path="/education" element={<Education />} />
+					<Route path="/skills" element={<Skills />} />
+					<Route path="/work" element={<Work />} />
+					<Route path="/*" element={<PageNotFound />} />
 				</Routes>
 				<Footer />
 			</Router>
