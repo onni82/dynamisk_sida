@@ -29,12 +29,21 @@
 		<meta property="og:image" content="/dynamisk_sida/logo-big.png" />
 		<meta property="og:url" content="https://onni82.github.io/dynamisk_sida/" />
 		<meta property="og:type" content="website" />
-		<script type="module" crossorigin src="/dynamisk_sida/assets/index-CQWY-PBh.js"></script>
-		<link rel="stylesheet" crossorigin href="/dynamisk_sida/assets/index-DVN3FVTl.css">
+		<script type="module" crossorigin src="/dynamisk_sida/assets/main-DDK4xxHx.js"></script>
+		<link rel="stylesheet" crossorigin href="/dynamisk_sida/assets/main-DVN3FVTl.css">
 	</head>
 	<body>
 		<div id="box-content"></div>
 		<script src="https://code.jquery.com/jquery-3.7.1.js"
 		integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+		<script>
+			(() => {
+				const redirect = sessionStorage.redirect;
+				delete sessionStorage.redirect;
+				if (redirect && redirect !== location.href) {
+					history.replaceState(null, null, redirect);
+				}
+			})();
+		</script>
 	</body>
 </html>
