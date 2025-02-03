@@ -21,11 +21,7 @@ const Footer = () => {
 					Onni Bucht
 				</span>
 			</p>
-			<a
-			className="clickable contact"
-			href="/dynamisk_sida/contact"
-			aria-current={location.pathname === "/dynamisk_sida/contact" ? "page" : undefined}
-			>Contact</a>
+			<Link className="clickable contact" to="/contact" aria-current={location.pathname === "/dynamisk_sida/contact" ? "page" : undefined}>Contact</Link>
 		</footer>
 	);
 };
