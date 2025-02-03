@@ -5,7 +5,7 @@ const Work = () => {
 	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
-		fetch('./data.json')
+		fetch('https://onni82.github.io/dynamisk_sida/data.json')
 			.then((response) => response.json())
 			.then((jsonData) => {
 				setData(jsonData);
