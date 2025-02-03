@@ -1,4 +1,5 @@
 import { useLocation } from "react-router-dom";
+import { Link } from "react-router";
 
 const Header = () => {
 	const location = useLocation();
@@ -12,22 +13,10 @@ const Header = () => {
 			<nav id="menu">
 				<ul>
 					<li>
-						<a
-							className="clickable index"
-							href="/dynamisk_sida/"
-							aria-current={location.pathname === "/dynamisk_sida/" ? "page" : undefined}
-						>
-							Home
-						</a>
+						<Link className="clickable index" to="/" aria-current={location.pathname === "/dynamisk_sida/" ? "page" : undefined}>Home</Link>
 					</li>
 					<li>
-						<a
-							className="clickable work"
-							href="/dynamisk_sida/work"
-							aria-current={location.pathname === "/dynamisk_sida/work" ? "page" : undefined}
-						>
-							Work Experience
-						</a>
+						<Link className="clickable work" to="/work" aria-current={location.pathname === "/dynamisk_sida/work" ? "page" : undefined}>Work</Link>
 					</li>
 					<li>
 						<a
