@@ -18,7 +18,7 @@ Du får gärna ha både dessa projekt och de tidigare som ligger direkt i HTML-k
 
 **Navigation**
 - [x] Navigationen på sidan ska baseras på React Router så att hela sidan i praktiken kör React.
-- [ ] Du ska säkerställa att användaren inte får ett 404-sida om de skulle ladda-om något av sidorna i din app.
+- [x] Du ska säkerställa att användaren inte får ett 404-sida om de skulle ladda-om något av sidorna i din app.
 
 **Deploy**
 - [x] Publicera din sida på Github Pages så att den blir åtkomlig via en länk.
