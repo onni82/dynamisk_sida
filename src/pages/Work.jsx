@@ -1,24 +1,23 @@
 import React, { useState, useEffect } from 'react';
 
 const Work = () => {
-	const [data, setData] = useState([]);
-	const [loading, setLoading] = useState(true);
+	// const [data, setData] = useState([]);
+	// const [loading, setLoading] = useState(true);
 
-	useEffect(() => {
-		fetch('https://onni82.github.io/dynamisk_sida/data.json')
-			.then((response) => response.json())
-			.then((jsonData) => {
-				setData(jsonData);
-				setLoading(false);
-			})
-			.catch((error) => {
-				console.error('Error fetching data:', error);
-				setLoading(false);
-			});
-	}, []
-	);
+	// useEffect(() => {
+	// 	fetch('https://onni82.github.io/dynamisk_sida/data.json')
+	// 		.then((response) => response.json())
+	// 		.then((jsonData) => {
+	// 			setData(jsonData);
+	// 			setLoading(false);
+	// 		})
+	// 		.catch((error) => {
+	// 			console.error('Error fetching data:', error);
+	// 			setLoading(false);
+	// 		});
+	// }, []);
 
-	if (loading) return <main><p>Loading data</p></main>;
+	// if (loading) return <main><p>Loading data</p></main>;
 
 	return (
 		<main>
