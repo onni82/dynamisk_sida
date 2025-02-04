@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import data from '../data.json';
 
 const Education = () => {
 	// const [data, setData] = useState([]);
