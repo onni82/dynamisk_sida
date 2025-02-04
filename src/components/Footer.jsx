@@ -22,7 +22,7 @@ const Footer = () => {
 					Onni Bucht
 				</span>
 			</p>
-			<Link className="clickable contact" to="/contact" aria-current={location.pathname === "/contact" ? "page" : undefined}>Contact</Link>
+			<Link className="clickable" to="/contact" aria-current={location.pathname === "/contact" ? "page" : undefined}>Contact</Link>
 		</footer>
 	);
 };
