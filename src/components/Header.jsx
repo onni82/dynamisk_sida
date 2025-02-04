@@ -13,19 +13,19 @@ const Header = () => {
 			<nav id="menu">
 				<ul>
 					<li>
-						<Link className="clickable index" to="/" aria-current={location.pathname === "/dynamisk_sida/" ? "page" : undefined}>Home</Link>
+						<Link className="clickable index" to="/" aria-current={location.pathname === "/" ? "page" : undefined}>Home</Link>
 					</li>
 					<li>
-						<Link className="clickable work" to="/work" aria-current={location.pathname === "/dynamisk_sida/work" ? "page" : undefined}>Work</Link>
+						<Link className="clickable work" to="/work" aria-current={location.pathname === "/work" ? "page" : undefined}>Work</Link>
 					</li>
 					<li>
-						<Link className="clickable coding" to="/coding" aria-current={location.pathname === "/dynamisk_sida/coding" ? "page" : undefined}>Coding</Link>
+						<Link className="clickable coding" to="/coding" aria-current={location.pathname === "/coding" ? "page" : undefined}>Coding</Link>
 					</li>
 					<li>
-						<Link className="clickable education" to="/education" aria-current={location.pathname === "/dynamisk_sida/education" ? "page" : undefined}>Education</Link>
+						<Link className="clickable education" to="/education" aria-current={location.pathname === "/education" ? "page" : undefined}>Education</Link>
 					</li>
 					<li>
-						<Link className="clickable skills" to="/skills" aria-current={location.pathname === "/dynamisk_sida/skills" ? "page" : undefined}>Skills</Link>
+						<Link className="clickable skills" to="/skills" aria-current={location.pathname === "/skills" ? "page" : undefined}>Skills</Link>
 					</li>
 				</ul>
 			</nav>
