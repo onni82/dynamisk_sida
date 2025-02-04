@@ -28,7 +28,7 @@ const Work = () => {
 					<section key={work.id}>
 						<p className="sub-category">{work.employer}</p>
 						<p>{work.period} - {work.title}</p>
-						<p dangerouslySetInnerHTML={{ __html: work.description}} />
+						<p dangerouslySetInnerHTML={{ __html: work.description }} />
 						<p>{work.location}</p>
 					</section>
 				))}
