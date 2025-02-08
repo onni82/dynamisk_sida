@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Footer = () => {
+const Footer = ({ menuClose }) => {
 	const location = useLocation();
 	const [isClicked, setIsClicked] = useState(false);
 
@@ -22,7 +22,7 @@ const Footer = () => {
 					Onni Bucht
 				</span>
 			</p>
-			<Link className="clickable" to="/contact" aria-current={location.pathname === "/contact" ? "page" : undefined}>Contact</Link>
+			<Link to="/contact" aria-current={location.pathname === "/contact" ? "page" : undefined}>Contact</Link>
 		</footer>
 	);
 };
