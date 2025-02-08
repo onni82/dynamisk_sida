@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 const Footer = ({ menuClose }) => {
 	const location = useLocation();
 	const [isClicked, setIsClicked] = useState(false);
-
 	const handleEasterEggClick = () => {
 		setIsClicked(!isClicked);
 		document.body.style.backgroundColor = isClicked ? "" : "lightblue";
@@ -22,7 +21,7 @@ const Footer = ({ menuClose }) => {
 					Onni Bucht
 				</span>
 			</p>
-			<Link to="/contact" aria-current={location.pathname === "/contact" ? "page" : undefined}>Contact</Link>
+			<Link to="/contact" aria-current={location.pathname === "/contact" ? "page" : undefined} onClick={menuClose}>Contact</Link>
 		</footer>
 	);
 };
