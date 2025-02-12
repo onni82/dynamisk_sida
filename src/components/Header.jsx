@@ -1,7 +1,6 @@
-import { useLocation, Link, NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = ({ menuOpen, setMenuOpen, menuClose }) => {
-	const location = useLocation();
 	const toggleMenu = () => setMenuOpen((prev) => !prev);
 
 	return (
