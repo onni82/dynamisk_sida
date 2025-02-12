@@ -1,6 +1,5 @@
-import { useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 const Footer = ({ menuClose }) => {
 	const location = useLocation();
@@ -21,7 +20,7 @@ const Footer = ({ menuClose }) => {
 					Onni Bucht
 				</span>
 			</p>
-			<Link to="/contact" aria-current={location.pathname === "/contact" ? "page" : undefined} onClick={menuClose}>Contact</Link>
+			<NavLink to="/contact" onClick={menuClose}>Contact</NavLink>
 		</footer>
 	);
 };
