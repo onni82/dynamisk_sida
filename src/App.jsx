@@ -18,7 +18,7 @@ const App = () => {
 	return (
 		<>
 			<EasterEggModal />
-			<Router basename="/dynamisk_sida">
+			<Router>
 				<Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} menuClose={menuClose} />
 				<Routes>
 					<Route path="/" element={<Home />} />
